@@ -17,6 +17,7 @@ public class PickUpObject : MonoBehaviour
                 PickedObject.transform.position = ZonadeInteraccion.position;
                 PickedObject.GetComponent<Rigidbody>().useGravity = false;
                 PickedObject.GetComponent<Rigidbody>().isKinematic = true;
+                AudioManager.Instance.Play2D("Sonido_2");
             }
         }else if (PickedObject != null)
         {
